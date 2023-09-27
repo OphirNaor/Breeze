@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import Branches from "./pages/Branches";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
+import './App.css';
 
 function App() {
   return (

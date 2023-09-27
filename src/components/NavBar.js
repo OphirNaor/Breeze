@@ -8,12 +8,11 @@ const useStyles = makeStyles()(theme => ({
     mainNavbar: {
         position: 'fixed',
         fontWeight: '550',
-        padding: 0,
+        padding: '0.5rem 1.5rem',
         width: '100%',
         zIndex: 1,
         opacity: 1,
         transition: 'all .3s',
-        gap: 10
     },
     scrollNavbar: {
         position: 'fixed',
@@ -21,8 +20,7 @@ const useStyles = makeStyles()(theme => ({
         width: '100%',
         zIndex: 1,
         opacity: 1,
-        gap: 50,
-        background: 'linear-gradient(0deg, rgba(166, 169, 176, 1) 0%, rgba(73, 72, 72, 1) 100%)',
+        background: '#ffc8238a',
         transition: 'all .3s',
         padding: '0.5rem 1.5rem',
         boxShadow: '0 0 10px #0000001a'
@@ -66,12 +64,12 @@ const NavBar = () => {
     return (
         <Stack direction='row' justifyContent='space-around' alignItems='center' className={scrollNavbar ? classes.scrollNavbar : classes.mainNavbar}>
             <Link to='/' style={{ textDecoration: 'none' }}>
-                <img src={Logo} alt='logo' className={classes.logo}/>
+                <img src={Logo} alt='logo' className={classes.logo} />
             </Link>
             <Link to='/' className={classes.navbarLink}>
                 Home
             </Link>
-             <Link to='/menu' className={classes.navbarLink}>
+            <Link to='/menu' className={classes.navbarLink}>
                 Menu
             </Link>
             <Link to='/branches' className={classes.navbarLink}>
